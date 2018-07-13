@@ -1,5 +1,5 @@
 # https://docs.docker.com/compose/aspnet-mssql-compose/
-version: "3"
+version: "2.0"
 services:
    web:
        build: .
