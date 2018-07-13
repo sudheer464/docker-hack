@@ -1,18 +1,30 @@
 {
-    "AWSEBDockerrunVersion": "2.0",
-    "Image": {
-      "Name": "rahulell/aspnetapp",
-      "Update": "true",
-      "Name": "sudheeramgothu/my-app",
-      "Update": "true",
-    },
-    "Ports": [
-      {
-        "ContainerPort": "80",
-        "ContainerPort": "8091",
-        "ContainerPort": "8092",
-        "ContainerPort": "8093",
-        "ContainerPort": "11210"
-      }
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+        {
+           
+            "image": "rahulell/aspnetapp",
+          
+            "Ports": [
+                {
+                    
+                    "containerPort": 80
+                }
+            ],
+           
+        },
+        {
+          
+            "image": "sudheeramgothu/my-app",
+         
+            "Ports": [
+                {
+                      "ContainerPort": "8091",
+                      "ContainerPort": "8092",
+                      "ContainerPort": "8093",
+                      "ContainerPort": "11210"
+                }
+            ]
+        }
     ]
 }
