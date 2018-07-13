@@ -14,7 +14,7 @@
 },
 {
 "name": "my-app",
-"image": "sudheeramgothu/my-app",
+"image": "couchbase/server:enterprise-4.6.3",
 "essential": true,
 "memory": 128,
 "portMappings": [
