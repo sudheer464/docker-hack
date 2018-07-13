@@ -1,0 +1,18 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+      "Name": "rahulell/aspnetapp",
+      "Update": "true",
+      "Name": "sudheeramgothu/my-app",
+      "Update": "true",
+    },
+    "Ports": [
+      {
+        "ContainerPort": "80",
+        "ContainerPort": "8091",
+        "ContainerPort": "8092",
+        "ContainerPort": "8093",
+        "ContainerPort": "11210"
+      }
+    ]
+}
