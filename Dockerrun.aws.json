@@ -1,5 +1,5 @@
 {
-    "AWSEBDockerrunVersion": "1",
+    "AWSEBDockerrunVersion": "2.0",
     "Image": {
       "Name": "rahulell/aspnetapp",
       "Update": "true",
