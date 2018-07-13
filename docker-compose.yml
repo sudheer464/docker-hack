@@ -1,0 +1,18 @@
+# https://docs.docker.com/compose/aspnet-mssql-compose/
+version: "3"
+services:
+   web:
+       build: .
+       image: "rahulell/aspnetapp"
+       ports:
+           - "8000:80"
+   couchbase:
+       image: "couchbase/server:enterprise-4.6.3"
+       deploy:
+         replicas: 1
+       ports:
+         - 8091:8091
+         - 8092:8092
+         - 8093:8093
+         - 8094:8094
+         - 11210:11210
