@@ -8,8 +8,6 @@ services:
            - "8000:80"
    couchbase:
        image: "couchbase/server:enterprise-4.6.3"
-       deploy:
-         replicas: 1
        ports:
          - 8091:8091
          - 8092:8092
